@@ -7,8 +7,20 @@ using namespace std;
 
 class UserProfile{
     public:
-        UserProfile(const string& username, const string& email, const NotificationPreferences& preferences);
-}
+        UserProfile(const string& username, const string& email, const NotificationPreferences& preferences); //constructor
+
+        //getter
+        NotificationPreferences getNotificationPreferences() const;
+        string getUsername() const;
+        string getEmail() const;
+
+    private:
+    string username;
+    string email;
+    NotificationPreferences preferences;
+
+
+};
 
 
 
